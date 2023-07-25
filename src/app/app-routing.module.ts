@@ -10,7 +10,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'category/:categoryName', component: SingleCategoryComponent},
-  {path: 'post/:id', component: SinglePostComponent},
+  {path: 'post/:postId', component: SinglePostComponent},
 
   {path: 'about', component: AboutUsComponent},
   {path: 'term-conditions', component: TermsAndConditionComponent},

@@ -28,4 +28,8 @@ export class PostService {
   getPostsbyCategories(categoryId: number): Observable<Post[]>{
     return this.http.get<Post[]>(`${this.baseUrl}/category/${categoryId}/posts`)
   }
+
+  getPostbyId(postId: number): Observable<Post>{
+    return this.http.get<Post>(`${this.baseUrl}/${postId}`)
+  }
 }

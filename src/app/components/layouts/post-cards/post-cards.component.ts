@@ -15,6 +15,7 @@ export class PostCardsComponent {
   public posts?: Post[];
   public postsByCategories?: Post[];
   public category?: Category;
+  @Input() compact?: boolean;
 
   constructor(private postService: PostService, private route: ActivatedRoute, private categoryService: CategoryService){    
   }
@@ -38,7 +39,7 @@ export class PostCardsComponent {
       }
     });
   });
-}
+  }
 
 
 }
