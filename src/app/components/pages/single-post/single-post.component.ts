@@ -20,7 +20,6 @@ export class SinglePostComponent {
         this.postService.getPostbyId(+postId).subscribe((post: Post)=>{
           this.post = post;
         })
-        console.log(postId);
         
       }
     })

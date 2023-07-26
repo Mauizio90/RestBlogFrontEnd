@@ -2,14 +2,14 @@
     <div class="container fluid">
         <div class="row">
             <div class="col-md-12 text-center mt-5">
-                <h2 class="text-white">Featured Posts</h2>
+                <h2 class="text-white">featured</h2>
                 <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
         </div>
         
         <div class="row">
-            <div>
-                <app-post-cards [compact]="true"></app-post-cards>
+            <div >
+                <app-post-cards [posts]="postsfeatured" [compact]="true"></app-post-cards>
             </div>
         </div>
 
@@ -18,12 +18,12 @@
 
 <section class="container mt-5">
     <div class="col-md-12 text-center">
-        <h2>Latest Posts</h2>
+        <h2>every Posts</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
     <div class="row">
         <div>
-            <app-post-cards [compact]="true"></app-post-cards>
+            <app-post-cards [posts]="allposts" [compact]="true"></app-post-cards>
         </div>
     </div>
 </section>

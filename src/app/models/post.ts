@@ -10,4 +10,5 @@ export class Post {
     user?: User;
     categories?: Category[];
     imageUrl?: string[];
+    featured?: boolean;
 }
